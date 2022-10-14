@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const sequelize = require('./src/db/sequelize')
 
 const app = express()
-const port = 3000
+const port = 3948
 
 
 app
