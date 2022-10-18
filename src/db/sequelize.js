@@ -25,7 +25,7 @@ const initDb = () => {
         cp: pokemon.cp,
         picture: pokemon.picture,
         types: pokemon.types.join()
-      }).then(pokemon => console.log(pokemon.toJson()))
+      }).then(pokemon => console.log(pokemon.tojson()))
     })
 
     bcrypt.hash('pikatchu', 10)
@@ -42,5 +42,5 @@ const initDb = () => {
 }
   
 module.exports = { 
-  initDb, Pokemon, User //on expose noos models pour pouvoir l'utiliser ailler dans l'API
+  initDb, Pokemon, User //on expose nos models pour pouvoir l'utiliser ailler dans l'API
 }
